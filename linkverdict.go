@@ -29,7 +29,17 @@
 // A page-level nofollow and an anchor-level rel=nofollow are kept apart in
 // the reasons, because they fail for different operational causes: one is the
 // host's policy for the whole page, the other is what the publishing form did
-// to your anchor.
+// to your anchor. The same split shows up per host: readings taken off the
+// live HTML of pkg.go.dev, docs.rs, JSR, code.dlang.org and GitHub profiles,
+// where the structured repository field and the README body serve different
+// rel values on one page, are tabulated at
+// https://handsofflinks.com/developer-registry-backlinks/
+//
+// Evaluate answers about one anchor you already hold. To read the rel tokens
+// off a block of served HTML first, and get nofollow, ugc and sponsored
+// reported separately rather than collapsed into a single dofollow verdict,
+// there is a browser version of the same rules at
+// https://handsofflinks.com/dofollow-nofollow-checker/
 //
 // No network access and no HTML parsing; you hand it strings you already
 // have. Standard library only. Written for the link verification step of the
