@@ -41,6 +41,12 @@
 // there is a browser version of the same rules at
 // https://handsofflinks.com/dofollow-nofollow-checker/
 //
+// Indexable here means that no directive forbids indexing. It does not mean
+// the page has been indexed, which is a separate question only the search
+// engine can answer. The ways of checking that for the page a backlink sits
+// on, and what each method can and cannot show, are set out at
+// https://handsofflinks.com/check-if-backlinks-are-indexed/
+//
 // No network access and no HTML parsing; you hand it strings you already
 // have. Standard library only. Written for the link verification step of the
 // autonomous link pipeline at https://handsofflinks.com/ where a row may not
