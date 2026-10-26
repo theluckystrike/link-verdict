@@ -47,6 +47,12 @@
 // on, and what each method can and cannot show, are set out at
 // https://handsofflinks.com/check-if-backlinks-are-indexed/
 //
+// A page can be Indexable here and still never enter the index. The most
+// common Search Console status for such a host page, "Discovered - currently
+// not indexed", records a decision about the host page rather than a fault in
+// the link, and what it means for a backlink placed on that page is set out at
+// https://handsofflinks.com/discovered-currently-not-indexed/
+//
 // No network access and no HTML parsing; you hand it strings you already
 // have. Standard library only. Written for the link verification step of the
 // autonomous link pipeline at https://handsofflinks.com/ where a row may not
